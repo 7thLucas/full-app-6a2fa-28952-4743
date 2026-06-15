@@ -1,0 +1,101 @@
+<style>
+  .mode-landscape .sl-body { flex-direction: row; }
+  .mode-portrait .sl-body { flex-direction: column; }
+  .mode-landscape .sl-formula { flex: 1; }
+  .mode-landscape .sl-value { width: 18rem; flex-shrink: 0; }
+  .mode-portrait .sl-formula { width: 100%; }
+  .mode-portrait .sl-value { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-5">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between gap-4">
+      <div>
+        <span class="text-teal-600 text-xs font-bold tracking-[0.18em] uppercase">North Star Metric</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Weekly Verified Operations</h2>
+      </div>
+      <div class="flex items-center gap-1.5 rounded-full bg-amber-50 border border-amber-200 px-3 py-1.5 flex-shrink-0">
+        <div class="w-1.5 h-1.5 rounded-full bg-amber-400"></div>
+        <span class="text-amber-700 text-xs font-semibold">Projected impact — based on your inputs</span>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="sl-body flex flex-1 gap-5">
+
+      <!-- Formula panel -->
+      <div class="sl-formula rounded-2xl bg-slate-900 p-8 flex flex-col gap-6">
+
+        <!-- Operation types -->
+        <div>
+          <p class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-3">Verified Operations (what gets counted)</p>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="text-teal-400 font-bold">✓</span>
+              <span class="text-white text-sm">Session confirmed — counseling appointment booked and completed</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-teal-400 font-bold">✓</span>
+              <span class="text-white text-sm">Class registered — yoga spot reserved by a client</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-teal-400 font-bold">✓</span>
+              <span class="text-white text-sm">Webinar seat claimed — live event registration confirmed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formula -->
+        <div class="border-t border-white/10 pt-5">
+          <p class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-3">Weekly Volume Formula</p>
+          <div class="bg-white/10 rounded-xl p-4">
+            <div class="flex items-center gap-2 flex-wrap">
+              <div class="rounded-full bg-amber-400/20 border border-amber-400/40 px-2.5 py-1">
+                <span class="text-amber-300 text-xs font-semibold">practitioners — adjust this</span>
+              </div>
+              <span class="text-slate-400">×</span>
+              <div class="rounded-full bg-amber-400/20 border border-amber-400/40 px-2.5 py-1">
+                <span class="text-amber-300 text-xs font-semibold">avg bookings each/week — adjust this</span>
+              </div>
+              <span class="text-slate-400">=</span>
+              <span class="text-white font-bold text-sm">WVO / week</span>
+            </div>
+            <p class="text-slate-500 text-xs mt-2 italic">Example: 5 practitioners × 10 bookings each = 50 verified operations / week</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Value panel -->
+      <div class="sl-value flex flex-col gap-4">
+
+        <div class="rounded-2xl bg-teal-50 border border-teal-100 p-6 flex flex-col gap-4 flex-1">
+          <p class="text-teal-600 text-xs font-semibold uppercase tracking-wider">Value Per Operation</p>
+          <div class="bg-white rounded-xl p-3 border border-teal-100">
+            <p class="text-slate-500 text-xs">Admin time saved per booking</p>
+            <div class="mt-1.5">
+              <div class="inline-flex rounded-full bg-amber-100 border border-amber-300 px-2.5 py-0.5">
+                <span class="text-amber-700 text-xs font-semibold">20 min — adjust this</span>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-xl bg-teal-600 p-4 text-center">
+            <p class="text-teal-200 text-xs mb-1">Projected Annual Value</p>
+            <p class="text-white text-xl font-black leading-tight">Fill in your<br/>numbers above</p>
+            <p class="text-teal-300 text-xs mt-2">WVO/wk × 20 min × 52 wks<br/>= hours saved / year</p>
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-slate-50 border border-slate-100 p-4">
+          <p class="text-slate-600 text-xs leading-relaxed">
+            The one number to watch: <span class="font-bold text-slate-800">total sessions, classes, and webinars confirmed per week.</span> Every other metric is secondary.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
