@@ -1,0 +1,62 @@
+<style>
+  .mode-landscape .sl-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .mode-portrait .sl-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-5">
+
+    <!-- Header -->
+    <div>
+      <span class="text-teal-600 text-xs font-bold tracking-[0.18em] uppercase">Core Features</span>
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Built for Every Role</h2>
+    </div>
+
+    <!-- Persona chips -->
+    <div class="flex gap-3">
+      <div class="px-4 py-1.5 rounded-full bg-teal-600 text-white text-sm font-semibold">Practitioners</div>
+      <div class="px-4 py-1.5 rounded-full bg-slate-100 text-slate-500 text-sm font-medium">Clients</div>
+    </div>
+
+    <!-- Feature grid — Practitioners view -->
+    <div class="sl-grid flex-1">
+
+      <div class="rounded-2xl bg-slate-50 border border-slate-100 p-5 flex flex-col gap-2">
+        <div class="w-9 h-9 rounded-xl bg-teal-100 flex items-center justify-center text-lg">🗓</div>
+        <p class="font-bold text-slate-800 text-sm">Unified Scheduler</p>
+        <p class="text-slate-500 text-xs leading-relaxed">Create, manage, and share booking slots for counseling, yoga, and webinar sessions from one dashboard.</p>
+      </div>
+
+      <div class="rounded-2xl bg-slate-50 border border-slate-100 p-5 flex flex-col gap-2">
+        <div class="w-9 h-9 rounded-xl bg-teal-100 flex items-center justify-center text-lg">👥</div>
+        <p class="font-bold text-slate-800 text-sm">Client Management</p>
+        <p class="text-slate-500 text-xs leading-relaxed">Track attendees, session history, and engagement across all three service categories in one view.</p>
+      </div>
+
+      <div class="rounded-2xl bg-slate-50 border border-slate-100 p-5 flex flex-col gap-2">
+        <div class="w-9 h-9 rounded-xl bg-teal-100 flex items-center justify-center text-lg">📊</div>
+        <p class="font-bold text-slate-800 text-sm">Revenue Dashboard</p>
+        <p class="text-slate-500 text-xs leading-relaxed">See bookings, attendance rates, and earnings at a glance — across counseling, yoga, and webinars.</p>
+      </div>
+
+      <div class="rounded-2xl bg-slate-50 border border-slate-100 p-5 flex flex-col gap-2">
+        <div class="w-9 h-9 rounded-xl bg-teal-100 flex items-center justify-center text-lg">🔔</div>
+        <p class="font-bold text-slate-800 text-sm">Automated Reminders</p>
+        <p class="text-slate-500 text-xs leading-relaxed">Reduce no-shows with automatic session reminders so practitioners can focus on delivering value.</p>
+      </div>
+
+      <div class="rounded-2xl bg-slate-50 border border-slate-100 p-5 flex flex-col gap-2">
+        <div class="w-9 h-9 rounded-xl bg-teal-100 flex items-center justify-center text-lg">🎥</div>
+        <p class="font-bold text-slate-800 text-sm">Webinar Hosting</p>
+        <p class="text-slate-500 text-xs leading-relaxed">Launch live webinar events with registration pages, attendee lists, and integrated delivery tools.</p>
+      </div>
+
+      <div class="rounded-2xl bg-teal-600 p-5 flex flex-col gap-2">
+        <div class="w-9 h-9 rounded-xl bg-white/20 flex items-center justify-center text-lg">⚙️</div>
+        <p class="font-bold text-white text-sm">One Control Panel</p>
+        <p class="text-teal-100 text-xs leading-relaxed">All three service types managed from a single, unified practitioner interface — no context switching.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
