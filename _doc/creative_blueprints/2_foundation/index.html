@@ -1,40 +1,79 @@
 <style>
-  .mode-landscape .sl-foundation-layout { display: flex; flex-direction: row; align-items: stretch; min-height: 100%; }
-  .mode-landscape .sl-content-panel { width: 55%; padding: 3rem; display: flex; flex-direction: column; justify-content: center; }
-  .mode-landscape .sl-visual-panel { width: 45%; min-height: 0; }
-  .mode-portrait .sl-foundation-layout { display: flex; flex-direction: column; min-height: 100%; }
-  .mode-portrait .sl-content-panel { padding: 2rem 1.5rem; }
-  .mode-portrait .sl-visual-panel { min-height: 280px; }
+  .mode-landscape .sl-cols { flex-direction: row; }
+  .mode-portrait .sl-cols { flex-direction: column; }
 </style>
-<section class="w-full h-full overflow-auto bg-white">
-  <div class="sl-foundation-layout">
-    <div class="sl-content-panel">
-      <div class="flex items-center justify-between mb-4">
-        <span class="inline-block text-xs font-semibold tracking-widest uppercase" style="color:#6366f1;">Foundation</span>
-        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 border rounded-full" style="background-color:#6366f1; border-color:#6366f130;">
-          <span class="text-xs font-semibold" style="color:#ffffff;">Validated</span>
 
-        </span>
-      </div>
-      <h1 class="text-3xl font-bold text-slate-900 leading-tight mb-8">Scattered Scheduling &amp; Engagement</h1>
-      <div class="space-y-5">
-        <div class="border-l-4 pl-4 relative" style="border-color:#F43F5E;">
-          <h2 class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#E11D48;">The Problem</h2>
-          <p class="text-slate-700 leading-relaxed text-sm">Session facilitators juggle multiple scheduling tools, participant management systems, and engagement platforms. This fragmentation wastes hours each week and creates a disjointed experience for participants across counseling sessions, yoga classes, and webinars.</p>
-        </div>
-        <div class="border-l-4 pl-4 relative" style="border-color:#6366f1;">
-          <h2 class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#6366f1;">The Solution</h2>
-          <p class="text-slate-700 leading-relaxed text-sm">Managing multiple session types across different platforms creates friction for facilitators and confusion for participants. You&#x27;re losing time to administrative overhead and missing opportunities to deepen engagement.</p>
-        </div>
-        <div class="border-l-4 border-sky-500 pl-4 relative"><h2 class="text-sm font-semibold text-sky-600 uppercase tracking-wide mb-1">Target Audience</h2><p class="text-slate-700 leading-relaxed text-sm">Therapists, yoga instructors, webinar hosts, and wellness coaches seeking streamlined operations</p></div>
-        <div class="border-l-4 border-amber-500 pl-4 relative"><h2 class="text-sm font-semibold text-amber-600 uppercase tracking-wide mb-1">Personal Motivation</h2><p class="text-slate-700 leading-relaxed text-sm">Empower facilitators to focus on their craft while technology handles logistics</p></div>
-      </div>
-      <div class="mt-6 flex flex-wrap gap-2"><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Session Management</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Engagement</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Community</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Wellness</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Virtual Events</span></div>
-      <div class="mt-8"><data-attribution /></div>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-6">
+
+    <!-- Header -->
+    <div>
+      <span class="text-teal-600 text-xs font-bold tracking-[0.18em] uppercase">The Foundation</span>
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Why This Platform Exists</h2>
     </div>
-    <div class="sl-visual-panel relative">
-      <img src="http://qb-be-deck.quantumbyte:9999/common/image-generation?prompt=scattered+messy+multiple+apps+confusion+chaos+frustrated+facilitator+juggling&amp;keyspace=g19mqbiv&amp;user_id=4743" alt="visual" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent opacity-40"></div>
+
+    <!-- Two-zone split -->
+    <div class="sl-cols flex flex-1 gap-6">
+
+      <!-- Problem -->
+      <div class="flex-1 rounded-2xl bg-slate-900 p-8 flex flex-col">
+        <div class="flex items-center gap-2 mb-5">
+          <div class="w-2 h-2 rounded-full bg-rose-400"></div>
+          <span class="text-rose-300 text-xs font-semibold tracking-widest uppercase">The Problem</span>
+        </div>
+        <p class="text-white text-lg font-bold leading-snug mb-5">
+          Wellness practitioners manage 3–5 disconnected tools just to run their practice.
+        </p>
+        <div class="space-y-3 mt-auto">
+          <div class="flex gap-3 bg-white/10 rounded-xl p-3">
+            <span class="text-rose-400 font-bold flex-shrink-0">✕</span>
+            <p class="text-slate-300 text-sm">Separate booking apps for counseling, yoga, and webinars — no single source of truth</p>
+          </div>
+          <div class="flex gap-3 bg-white/10 rounded-xl p-3">
+            <span class="text-rose-400 font-bold flex-shrink-0">✕</span>
+            <p class="text-slate-300 text-sm">Clients navigate multiple portals and logins — friction kills retention</p>
+          </div>
+          <div class="flex gap-3 bg-white/10 rounded-xl p-3">
+            <span class="text-rose-400 font-bold flex-shrink-0">✕</span>
+            <p class="text-slate-300 text-sm">Revenue and credibility eroded by operational chaos, not poor service quality</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="flex-1 rounded-2xl border border-teal-100 bg-teal-50 p-8 flex flex-col">
+        <div class="flex items-center gap-2 mb-5">
+          <div class="w-2 h-2 rounded-full bg-teal-500"></div>
+          <span class="text-teal-600 text-xs font-semibold tracking-widest uppercase">The Solution</span>
+        </div>
+        <p class="text-slate-900 text-lg font-bold leading-snug mb-5">
+          One cohesive platform — counseling, yoga, and webinars unified under a single roof.
+        </p>
+        <div class="space-y-3 mt-auto">
+          <div class="flex gap-3 bg-white rounded-xl p-3 border border-teal-100">
+            <span class="text-xl flex-shrink-0">🧠</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm">Counseling Sessions</p>
+              <p class="text-slate-500 text-xs leading-relaxed">Book and run 1:1 or group therapy with one unified flow</p>
+            </div>
+          </div>
+          <div class="flex gap-3 bg-white rounded-xl p-3 border border-teal-100">
+            <span class="text-xl flex-shrink-0">🧘</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm">Yoga Classes</p>
+              <p class="text-slate-500 text-xs leading-relaxed">Live or on-demand sessions with effortless scheduling</p>
+            </div>
+          </div>
+          <div class="flex gap-3 bg-white rounded-xl p-3 border border-teal-100">
+            <span class="text-xl flex-shrink-0">📡</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm">Webinars</p>
+              <p class="text-slate-500 text-xs leading-relaxed">Host knowledge events for large, engaged communities</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
